@@ -38,7 +38,13 @@ body {
 }
 
 .logo {
-  
+  &__link {
+    background: url(../../media/logo_pc.png) no-repeat center;
+    display: block;
+    width: 128px;
+    height: 32px;
+    padding: 10px;
+  }
 }
 
 .sns-list {
