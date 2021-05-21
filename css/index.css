@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@font-face {
+  font-family: "Binggrae-Bold";
+  src: url("../font/Binggrae-Bold.ttf");
+}
+@font-face {
+  font-family: "Binggrae";
+  src: url("../font/Binggrae.ttf");
+}
+/* ============ Reset CSS ============ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+html, body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.blind {
+  display: block;
+  width: 1px;
+  height: 1px;
+  color: transparent;
+  font-size: 1px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+/* ============ header ============ */
+body {
+  background-color: lavender;
+  width: 100%;
+  height: 100vh;
+}
+
+.util {
+  margin-right: auto;
+}
+.util__item {
+  position: relative;
+  display: inline-block;
+  color: #444;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin-right: 28px;
+}
+.util__item:last-child {
+  margin-right: 0;
+}
+.util__item:last-child::after {
+  background-color: transparent;
+}
+.util__item::after {
+  content: "";
+  background-color: #ccc;
+  position: absolute;
+  top: 51%;
+  right: -16px;
+  width: 1px;
+  height: 10px;
+  transform: translateY(-50%);
+}
+
+.sns-list {
+  display: flex;
+}
+.sns-list__link {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+.sns-list__link:last-child {
+  margin-right: 0;
+}
+.sns-list__link.instagram {
+  background: url(../../media/header/footer_instar.png) no-repeat center;
+}
+.sns-list__link.youtube {
+  background: url(../../media/header/footer_youtube.png) no-repeat center;
+}
+
+.gnb {
+  position: relative;
+}
+.gnb__bg {
+  background-color: #fff;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid #ccc;
+  transition: 0.5s;
+}
+.gnb__bg::before {
+  content: "";
+  background-color: #f0f0f0;
+  display: block;
+  max-width: 1170px;
+  height: 1px;
+  margin: 0 auto;
+}
+.gnb__bg.on {
+  height: 330px;
+}
+.gnb__inner {
+  position: relative;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.gnb__main {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.gnb__main-item {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+}
+.gnb__main-item::before {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  transform: translateX(-50%);
+}
+.gnb__main-item:hover::before {
+  background-color: #ed1c24;
+}
+.gnb__main-item:hover .gnb__main-link {
+  color: #ed1c24;
+}
+.gnb__main-link {
+  width: 100%;
+  min-height: 60px;
+  font-family: "Binggrae-Bold";
+  color: #222;
+  font-size: 18px;
+  text-align: center;
+  line-height: 60px;
+}
+.gnb__sub {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  width: 100%;
+  padding: 22px 0 30px;
+  text-align: center;
+  z-index: 10;
+}
+.gnb__sub-item {
+  height: 36px;
+  line-height: 36px;
+}
+.gnb__sub-link {
+  font-size: 16px;
+  font-weight: 300;
+}
+.gnb__sub-link:hover {
+  color: #ed1c24;
+  font-weight: 700;
+}
+.gnb__sub-area {
+  position: absolute;
+  top: 63px;
+  right: 0;
+  width: 900px;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+.gnb__sub-area.on {
+  height: 300px;
+}
+.gnb__side-banner {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  width: 205px;
+  height: 260px;
+}
+.gnb__link-banner {
+  display: block;
+}
+
+.header {
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+.header__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1170px;
+  height: 77px;
+  margin: 0 auto;
+  padding: 0 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.header__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__sns-list {
+  margin-right: 18px;
+}/*# sourceMappingURL=index.css.map */

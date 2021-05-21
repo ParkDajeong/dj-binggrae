@@ -1,0 +1,13 @@
+html, body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.blind {
+  display: block;
+  width: 1px;
+  height: 1px;
+  color: transparent;
+  font-size: 1px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
