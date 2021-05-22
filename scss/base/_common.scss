@@ -11,3 +11,25 @@ html, body {
   text-indent: -9999px;
   overflow: hidden;
 }
+
+.btn-primary {
+  background-color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 27px;
+  padding: 5px;
+  font-weight: 500;
+  letter-spacing: -0.08px;
+  border: 1px solid $color-light-gray;
+}
+
+.logo {
+  &__link {
+    background: url(../../media/logo_pc.png) no-repeat center;
+    display: block;
+    width: 128px;
+    height: 32px;
+    padding: 10px;
+  }
+}

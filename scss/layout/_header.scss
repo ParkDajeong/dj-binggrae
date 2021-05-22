@@ -13,7 +13,7 @@ body {
     display: inline-block;
     color: $color-dark-gray;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.7px;
     margin-right: 28px;
 
     &:last-child {
@@ -34,16 +34,6 @@ body {
       height: 10px;
       transform: translateY(-50%);
     }
-  }
-}
-
-.logo {
-  &__link {
-    background: url(../../media/logo_pc.png) no-repeat center;
-    display: block;
-    width: 128px;
-    height: 32px;
-    padding: 10px;
   }
 }
 

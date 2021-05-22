@@ -23,10 +23,6 @@
 
 @media screen and (max-width: 768px) {
   /* ========== header ========== */
-  .util {
-    display: none;
-  }
-
   .logo {
     &__link {
       background-image: url(../../media/logo_m.png);
@@ -356,9 +352,63 @@
       }
     }
 
+    &__util {
+      display: none;
+    }
+
     &__logo {
       position: static;
       transform: none;
+    }
+
+    &__sns-list {
+      display: none;
+    }
+  }
+
+  /* ========== footer ========== */
+  .footer {
+    &__inner {
+      position: relative;
+      padding: 25px 10px 30px;
+    }
+
+    &__content {
+      margin-top: 35px;
+      padding: 13px 0 0;
+      text-align: center;
+      border: none;
+      border-top: 1px solid #e3e3e3;
+    }
+
+    &__company-info {
+      font-size: 13px;
+    }
+
+    &__text:not(:nth-of-type(1)) {
+      margin: 5px;
+    }
+
+    &__logo {
+      position: absolute;
+      top: 16px;
+      left: 20px;
+
+      .logo__link {
+        width: 101.5px;
+        height: 26.5px;
+      }
+    }
+
+    &__bottom {
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    &__copyright {
+      font-size: 12px;
+      font-weight: 300;
+      letter-spacing: normal;
     }
 
     &__sns-list {

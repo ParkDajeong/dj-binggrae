@@ -57,6 +57,26 @@ html, body {
   overflow: hidden;
 }
 
+.btn-primary {
+  background-color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 27px;
+  padding: 5px;
+  font-weight: 500;
+  letter-spacing: -0.08px;
+  border: 1px solid #ccc;
+}
+
+.logo__link {
+  background: url(../../media/logo_pc.png) no-repeat center;
+  display: block;
+  width: 128px;
+  height: 32px;
+  padding: 10px;
+}
+
 /* ============ header ============ */
 body {
   background-color: lavender;
@@ -72,7 +92,7 @@ body {
   display: inline-block;
   color: #444;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.7px;
   margin-right: 28px;
 }
 .util__item:last-child {
@@ -90,14 +110,6 @@ body {
   width: 1px;
   height: 10px;
   transform: translateY(-50%);
-}
-
-.logo__link {
-  background: url(../../media/logo_pc.png) no-repeat center;
-  display: block;
-  width: 128px;
-  height: 32px;
-  padding: 10px;
 }
 
 .sns-list {
@@ -268,6 +280,50 @@ body {
   margin-right: 18px;
 }
 
+/* ============ footer ============ */
+.footer {
+  background-color: #f6f6f6;
+}
+.footer__inner {
+  width: 100%;
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.footer__content {
+  padding: 35px 0 25px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.footer__text {
+  margin-top: 9px;
+  color: #666;
+  letter-spacing: -0.1px;
+}
+.footer__link {
+  background: #fff url(../../media/bg_arrow_small01.gif) no-repeat 91% center;
+  padding: 0 22px 0 10px;
+  margin-left: 5px;
+}
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  padding: 25px 0 40px;
+}
+.footer__logo {
+  margin-right: 40px;
+}
+.footer__logo .logo__link {
+  background-image: url(../../media/footer_logo.png);
+}
+.footer__copyright {
+  color: #666;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+.footer__sns-list {
+  margin-left: auto;
+}
+
 /* ============ 반응형 ============ */
 @media screen and (max-width: 1100px) {
   /* ========== header ========== */
@@ -283,10 +339,6 @@ body {
 }
 @media screen and (max-width: 768px) {
   /* ========== header ========== */
-  .util {
-    display: none;
-  }
-
   .logo__link {
     background-image: url(../../media/logo_m.png);
     background-size: 100%;
@@ -536,11 +588,54 @@ body {
   .header__inner.on .logo__link {
     background-image: url(../../media/logo_m_w.png);
   }
+  .header__util {
+    display: none;
+  }
   .header__logo {
     position: static;
     transform: none;
   }
   .header__sns-list {
+    display: none;
+  }
+
+  /* ========== footer ========== */
+  .footer__inner {
+    position: relative;
+    padding: 25px 10px 30px;
+  }
+  .footer__content {
+    margin-top: 35px;
+    padding: 13px 0 0;
+    text-align: center;
+    border: none;
+    border-top: 1px solid #e3e3e3;
+  }
+  .footer__company-info {
+    font-size: 13px;
+  }
+  .footer__text:not(:nth-of-type(1)) {
+    margin: 5px;
+  }
+  .footer__logo {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+  }
+  .footer__logo .logo__link {
+    width: 101.5px;
+    height: 26.5px;
+  }
+  .footer__bottom {
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .footer__copyright {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: normal;
+  }
+  .footer__sns-list {
     display: none;
   }
 }/*# sourceMappingURL=index.css.map */
