@@ -578,6 +578,11 @@ body {
     height: 26px;
   }
 
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
   .header__inner {
     height: 44px;
     transition: 0.3s;
