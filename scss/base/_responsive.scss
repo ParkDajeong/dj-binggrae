@@ -22,7 +22,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  /* ========== header ========== */
+  /* ========== common ========== */
   .logo {
     &__link {
       background-image: url(../../media/logo_m.png);
@@ -36,6 +36,7 @@
     display: none;
   }
 
+  /* ========== header ========== */
   .btn-menu {
     position: relative;
     cursor: pointer;
