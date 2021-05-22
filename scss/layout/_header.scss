@@ -62,12 +62,18 @@ body {
     
     &.instagram {
       background: url(../../media/header/footer_instar.png) no-repeat center;
+      background-size: 100%;
     }
 
     &.youtube {
       background: url(../../media/header/footer_youtube.png) no-repeat center;
+      background-size: 100%;
     }
-    
+
+    &.kica {
+      background: url(../../media/header/ico_link_kica.png) no-repeat center;
+      background-size: 100%;
+    }
   }
 }
 
@@ -200,6 +206,11 @@ body {
   &__link-banner {
     display: block;
   }
+}
+
+// mobile nav
+.gnb-mo {
+  display: none;
 }
 
 .header {
